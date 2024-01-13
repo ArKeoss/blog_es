@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -76,4 +77,84 @@ section a {
 
 section a:hover {
     color: #ff7f50; /* Changer la couleur au survol */
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+div.atout {
+    margin: 20px;
+}
+
+.atout h1, .atout h2 {
+    color: #1E90FF; /* Couleur bleue pour les titres des éléments avec la classe "atout" */
+}
+
+.atout p {
+    line-height: 1.5;
+    color: #000000; /* Couleur turquoise pour les paragraphes des éléments avec la classe "atout" */
+}
+
+.atout a {
+    color: #000000; /* Couleur turquoise pour les liens des éléments avec la classe "atout" */
+    text-decoration: none;
+}
+
+.atout a:hover {
+    text-decoration: underline;
+}
+
+.atout .source-list {
+    list-style: none;
+    padding: 0;
+}
+
+.atout .source-list-item {
+    margin-bottom: 10px;
+}
+
+.atout .section-heading {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #1E90FF; /* Couleur bleue pour les sous-titres des éléments avec la classe "atout" */
+    margin-top: 20px;
+}
+
+.atout .subsection-heading {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #00060c; /* Couleur bleue pour les sous-sous-titres des éléments avec la classe "atout" */
+    margin-top: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2; /* Couleur de fond pour les en-têtes de tableau */
+}
+
+h2.nom {
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+}
+
+h1 , h2 {
+    text-decoration: underline;
 }
