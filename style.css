@@ -63,6 +63,13 @@ footer p {
     margin: 0;
 }
 
+
+/*Les photos dans le groupe à Lina, je les centre */
+.center-image {
+    display: block;
+    margin: 0 auto;
+}
+
 /* Styles spécifiques pour les articles */
 section p {
     line-height: 1.6;
