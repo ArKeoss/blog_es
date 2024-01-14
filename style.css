@@ -171,3 +171,26 @@ div.atout img {
     padding: 30px;
     align-items: center;
 }
+
+table {
+    width: 80%; /* Largeur du tableau */
+    border-collapse: collapse; /* Fusionner les bordures de cellules */
+    margin: 20px; /* Marge extérieure du tableau */
+  }
+
+  /* Style des cellules */
+  th, td {
+    padding: 40px;
+    border: 1px solid #dddddd; /* Bordure de chaque cellule */
+    padding: 8px; /* Espacement interne des cellules */
+    text-align: left; /* Alignement du texte dans les cellules */
+  }
+
+  /* Style de l'en-tête du tableau */
+  th {
+    background-color: #f2f2f2; /* Couleur de fond de l'en-tête */
+  }
+
+  h3.h3 {
+    text-align: center;
+  }
