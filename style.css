@@ -93,6 +93,7 @@ body {
 
 div.atout {
     margin: 20px;
+    padding-bottom: 50px;
 }
 
 .atout h1, .atout h2 {
@@ -164,4 +165,9 @@ h2.nom {
 
 h1 , h2 {
     text-decoration: underline;
+}
+
+div.atout img {
+    padding: 30px;
+    align-items: center;
 }
