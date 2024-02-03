@@ -1,45 +1,526 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* cette ligne permet d'importer des polices directement de google font */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans&family=Dancing+Script&family=Lobster&display=swap');
+
+/* l'objet * corrsepond a tout les élements html, on rénitialise le padding et le margin car
+a la base il y a un margin et un padding a tout les éléments qui peuvent deranger */
+
+*{
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    scroll-behavior: smooth;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2em;
-}
-
-nav ul {
     list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav a {
     text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 1.2em;
-    transition: color 0.3s ease;
+    scroll-behavior: smooth;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Lobster', cursive;
+    color: black;
+    overflow-x: hidden;
+
+
 }
 
-nav a:hover {
+/* le code de la navbar fixé */
+header {
+    position: fixed;
+    width: 230px;
+    height: 100%;
+    background-color: rgb(255, 255, 255) ;
+    left: -230px;
+    transition: all 0.5s ease-in-out;
+    border-right: 1px solid black;
+    opacity: 0.95;
+    z-index: 10;
+    overflow-y: hidden;
+}
+
+.titre2 {
+    position: relative;
+    padding-left: 70px;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    padding-top: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid black;
+    font-family: 'Bebas Neue', cursive;
+    z-index: 30;
+    
+}
+
+/* tex   */
+a.onglet {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 19px;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+a.onglet:hover {
+    text-decoration: underline;
+    padding-left: 55px;
+}
+
+#chekboxe {
+    display: none;
+}
+
+svg {
+    position: fixed;
+    cursor: pointer;
+    z-index: 1000000;
+}
+
+#menu {
+    left: 25px;
+    top: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+#fermer_menu {
+    top: 20px;
+    left: -180px;
+    transition: all 0.5s ease-in-out;
+}
+
+#chekboxe:checked ~ .navbar {
+    left: 0px;
+}
+
+#chekboxe:checked ~ label #fermer_menu {
+    left: 180px ;
+}
+
+#chekboxe:checked ~ label #menu {
+    left: 270px;
+    opacity: 0;
+}
+
+div.page {
+    padding-top: 70px;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(211, 211, 211);
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s ease-in-out;
+    overflow-y: hidden;
+}
+
+#head {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    z-index: 4;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgba(155, 155, 155, 0.72);
+}
+
+.nom{
+    position: absolute;
+    left: 37%;
+    top: 2px;
+    font-size: 45px;
+    cursor: pointer;
+}
+
+p.menu_titre {
+    position: absolute;
+    margin-top: 22px;
+    left: 90px; 
+    font-size: 21px; 
+    font-family: 'DM Sans', sans-serif;  
+}
+
+
+
+div.fond {
+    padding-top: 50px;
+    background: url(img/2.jpg) no-repeat fixed 50% 50%;
+    height: 610px;
+    background-size: cover;
+    overflow-y: hidden;
+  }
+
+  
+div.fond h1 {   
+
+    text-align: center;
+    padding-top: 100px;
+    font-size: 80px;
+    padding-bottom: 0px;
+    color: rgba(0, 0, 0, 0.966);
+    text-shadow: 3px 5px 1px #ffffff;
+    font-family: "Dancing Script", sans-serif;
+    padding-bottom: 20px;
+  }
+  
+div.trait {
+    height: 3px;
+    width: 17%;
+    margin: -3px auto;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 3px 3px 2px -1px #ffffff;
+  }
+  
+div.fond h2 {
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.966);
+    text-shadow: 3px 5px 1px #ffffff;
+    padding-top: 20px;
+  }
+
+ .transition {
+    width: 100%;
+    position: relative;
+    top: 190px;
+}
+
+.transition2 {
+    width: 100%;
+    position: relative;
+    top: -250px;
+}
+
+.transition3 {
+    width: 100%;
+    position: relative;
+    top: 120px;
+}
+div.qui {
+    height: 550px;
+    background-color: rgb(230, 230, 230);
+    
+}
+
+.mini_titre{
+    text-align: center;
+    padding: 40px;
+    font-size: 35px;
+    text-decoration: underline;
+}
+.image2{
+    position: relative;
+    left: 50%;
+}
+p.text {
+    text-align: center;
+    position: relative;
+    top: -350px;
+    left: 90px;
+    width: 40%;
+    font-size: 20px;
+    padding-top: 20px;
+}
+div.cour{
+    padding-top: 50px;
+    background-color: rgb(175, 175, 175);
+    height: 680px;
+}
+
+.img_cour {
+    margin-top: 80px;
+    width: 400px;
+    border: 4px solid #FFFFFF;
+    margin-left: 5px;
+}
+
+#imgpython {
+    position: relative;
+    left: 20%;
+}
+
+#imgc {
+    position: relative;
+    left: 20%;
+}
+.img_cour:hover {  
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.7s ease-in-out;
+  opacity: 0.55;
+}
+footer {
+    color: #FFFFFF;
+    background-color: black;
+    height: 400px;
+    overflow-y: hidden;
+
+    
+}
+
+footer p {
+    position: relative;
+    top: 50px;
+    text-align: center;
+    color: white;
+    font-size: 23px;
+    text-decoration: underline;
+}
+
+footer button {
+    border-radius: 40px;
+    padding: 8px;
+    position: relative;
+    top: 100px;
+    left: 41%;
+    margin-right:  20px;
+}
+
+footer button:hover {
+    cursor: pointer;
+    background-color: #b3b3b3;
+}
+
+.copyright {
+    text-align: end;
+    margin-right: 20px;
+    top: 180px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.python {
+    height: 920px;
+    background-color: #e9e9e9;
+}
+
+.titre-python {
+    position: relative;
+    top: 120px;
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 60px
+}
+
+.para {
+    position: relative;
+    top:15px;
+    padding: 150px;
+    font-size: 25px;
+    width: 50%;
+
+}
+
+.dowl {
+    height: 1050px;
+    background-color:#AFAFAF;
+}
+
+.transition6 {
+    width: 100%;
+    position: relative;
+    top: -400px;
+}
+
+.dowlad {
+    position: relative;
+    top: 200px;
+    font-size: 25px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+img.python {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: -550px;
+    left: 910px;
+}
+
+div.dowl a {
+    color: white;
+    text-decoration: underline;
+}
+
+.transition7 {
+    position: relative;
+    top: 200px;
+    width: 100%;
+}
+
+.logo-footer{
+    height: 40px;   
+    position: relative;
+    top: 130px;
+    left: 510px;
+    margin-left: 50px;
+}
+
+footer img:hover{
+    filter: saturate(0%);
+}
+
+.footer2 {
+    position: relative;    
+    top: 75px;
+}
+
+.transition8 {
+    position: relative;
+    top: -345px;
+    width: 100%;
+}
+
+.transition9 {
+    position: relative;
+    top: 300px;
+    width: 100%;
+}
+
+
+table {
+    position: relative;
+    top: 150px;
+    left: 150px;
+    border-collapse: collapse;
+    width: 80%;
+    height: 400px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+th {
+    background-color: #000000;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+tr:nth-child(even) {
+    background-color: #f8f8f8;
+  }
+tr:hover {
+    background-color: #e5e5e5;
+  }
+  
+td:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+td:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+.btn {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #000000;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+.btn:hover {
+    background-color: #0077b6;
+  }
+
+p.barrer {
+    text-decoration: line-through;
+    color: gray;
+}  
+
+.logo-logi {
+
+    width: 180px;
+    height: 180px;
+    border-radius:  30% 70% 70% 30% / 30% 45% 55% 70% ;
+    background: url('img/x80.gif');
+    cursor: pointer;
+    position: relative;
+    top: 80px;
+    margin-left: 26%;
+    margin-top: 120px;
+}
+
+.dowl2 {
+    height: 720px;
+    background-color:#AFAFAF;
+}
+
+.copyright1 {
+    position: relative;
+    top: 160px;
+
+}
+
+.qui p {
+    line-height: 1.6;
+    position: relative;
+    left: 40%;
+    font-size: 30px;
+    padding-bottom: 20px;
+    text-decoration: underline;
+}
+
+/* Styles pour les liens dans les articles */
+.qui a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative;
+    left: 40%;    
+    font-size: 20px;
+    
+
+}
+
+
+
+.qui a:hover {
     color: #ff7f50; /* Changer la couleur au survol */
 }
+
+footer p {
+    text-decoration: none;
+    padding-bottom: 7px;
+
+}
+
+footer h2 {
+    text-decoration: underline;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 section {
     padding: 25px;
@@ -49,19 +530,7 @@ h2 {
     color: #333;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
 
-footer p {
-    margin: 0;
-}
 
 
 /*Les photos dans le groupe à Lina, je les centre */
@@ -73,6 +542,8 @@ footer p {
 /* Styles spécifiques pour les articles */
 section p {
     line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 /* Styles pour les liens dans les articles */
@@ -80,10 +551,12 @@ section a {
     color: #3498db;
     text-decoration: none;
     transition: color 0.3s ease;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 section a:hover {
     color: #ff7f50; /* Changer la couleur au survol */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -92,35 +565,43 @@ body {
 }
 
 div.atout {
+    padding-top: 100px;
     margin: 20px;
     padding-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .atout h1, .atout h2 {
     color: #1E90FF; /* Couleur bleue pour les titres des éléments avec la classe "atout" */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .atout p {
     line-height: 1.5;
     color: #000000; /* Couleur turquoise pour les paragraphes des éléments avec la classe "atout" */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .atout a {
     color: #000000; /* Couleur turquoise pour les liens des éléments avec la classe "atout" */
     text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .atout a:hover {
     text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .atout .source-list {
     list-style: none;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .atout .source-list-item {
     margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .atout .section-heading {
@@ -128,6 +609,7 @@ div.atout {
     font-weight: bold;
     color: #1E90FF; /* Couleur bleue pour les sous-titres des éléments avec la classe "atout" */
     margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .atout .subsection-heading {
@@ -135,25 +617,32 @@ div.atout {
     font-weight: bold;
     color: #00060c; /* Couleur bleue pour les sous-sous-titres des éléments avec la classe "atout" */
     margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 table {
     width: 100%;
+    position: relative;
+    top: -5px;
     border-collapse: collapse;
     margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 table, th, td {
     border: 1px solid #ddd;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 th, td {
     padding: 10px;
     text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 th {
     background-color: #f2f2f2; /* Couleur de fond pour les en-têtes de tableau */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h2.nom {
@@ -161,6 +650,7 @@ h2.nom {
     color: #000000;
     text-decoration: none;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 , h2 {
@@ -170,12 +660,14 @@ h1 , h2 {
 div.atout img {
     padding: 30px;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 table {
     width: 80%; /* Largeur du tableau */
     border-collapse: collapse; /* Fusionner les bordures de cellules */
     margin: 20px; /* Marge extérieure du tableau */
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   /* Style des cellules */
@@ -184,13 +676,20 @@ table {
     border: 1px solid #dddddd; /* Bordure de chaque cellule */
     padding: 8px; /* Espacement interne des cellules */
     text-align: left; /* Alignement du texte dans les cellules */
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   /* Style de l'en-tête du tableau */
   th {
     background-color: #f2f2f2; /* Couleur de fond de l'en-tête */
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   h3.h3 {
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
   }
+
+div.general {
+    font-family: Arial, Helvetica, sans-serif;
+}
