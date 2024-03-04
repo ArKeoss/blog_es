@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Blog Enseignement scientifique</title>
+</head>
+<body>
+    <!-- cette partie permet de creer une chekboxe qui peut etre cocher et decocher avec des images pour pouvoir
+    ouvrir et fermer un menu  -->
+    <input type="checkbox" id="chekboxe">
+        <label for="chekboxe">   
+            <!-- les svg sont une manière de creer des images  -->
+            <svg id="menu" class="svg1" viewBox="0 0 100 80" width="40" height="40">
+                <rect width="100" height="20"></rect>
+                <rect y="30" width="100" height="20"></rect>
+                <rect y="60" width="100" height="20"></rect>
+            </svg>
+            <svg id="fermer_menu"  xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" viewBox="0 0 16 16"> <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708z"/> </svg>        
+        </label>
+    <!-- code de la barre fixé au haut du site     -->
+    <div id="head" class="head">
+        <a class="nom" href="index.html">Projet :  Tous chercheurs !</a>
+        <p class="menu_titre">MENU</p>
+    </div>
+    <!-- Code de la barre déroulante -->
+    <header class="navbar">
+        <h2 class="titre2">MENU</h2>
+        <!-- liste -->
+        <ul>
+            <li><a class="onglet" href="article1.html">L'homéopathie</a></li><br>
+            <li><a class="onglet" href="article2.html">L'hydroxychloroquine</a></li><br>
+            <li><a class="onglet" href="article3.html">La vaccination</a></li><br>
+            <li><a  class="onglet" href="article4.html">Tremblements de terre sans épicentre</a></li><br>
+            <li><a class="onglet" href="article5.html">La médecine quantique</a></li><br>
+            <li><a class="onglet" href="article6.html">La fonte du Permafrost</a></li>
+        </ul>
+    </header>
+    <div class="atout">
+        <h1 class="gras">ENSEIGNEMENT SVT</h1>
+
+        <h2>Projet :</h2>
+
+        <p>Dans le contexte du réchauffement climatique, la gestion de l'eau et la réduction des émissions de dioxyde de carbone sont devenues des préoccupations majeures. Les changements climatiques impactent les schémas de précipitations, mettant en péril les ressources hydriques. Les pratiques d'irrigation traditionnelles peuvent aggraver cette situation en contribuant au gaspillage d'eau.</p>
+
+        <p>Face à cela, l'utilisation de systèmes d'arrosage équipés de capteurs d'humidité du sol se profile comme une solution. Ces technologies permettent une irrigation précise, ajustée aux besoins réels des plantes, optimisant l'utilisation de l'eau et réduisant le gaspillage. En parallèle, favoriser des pratiques agricoles durables, notamment l'adoption de capteurs d'humidité, contribue à maintenir une végétation saine qui retient davantage de CO2, agissant ainsi comme une mesure d'atténuation des émissions de gaz à effet de serre.</p>
+
+        <p>Pour évaluer l'efficacité de ces approches, une comparaison entre différents modes d'arrosage, tels que le goutte-à-goutte, les capteurs d'humidité, et d'autres systèmes, sera entreprise.</p>
+
+        <p>Cette démarche vise à déterminer les méthodes les plus durables et efficientes pour répondre aux enjeux complexes de la gestion de l'eau et de la réduction des émissions de CO2, créant ainsi un équilibre essentiel dans la lutte contre le changement climatique.</p>
+
+        <h2 class="gras">Expérience : comparer les différents modes d’arrosage:</h2>
+
+        <p>Créer un système d'arrosage automatique en Arduino qui calcule le taux d'humidité du sol.</p>
+
+        <p>Ce projet consiste à réaliser un dispositif d’arrosage automatique pour des plantes, qui déclenche une arrivée d’eau seulement en cas de besoin. Utilisable pour une seule plante ou pour une petite plantation.</p>
+
+        <p>Disposé à proximité de la ou des plantes à surveiller, le montage surveille l’état de sécheresse de la terre à l’aide d’un capteur dédié, en caractérisant la résistance de la terre entre deux électrodes. Cette information sert ensuite à activer si besoin une pompe 5V, pilotée grâce à une carte Arduino afin d’alimenter les plantes en eau.</p>
+
+        <h3 class="gras">Composants nécessaires :</h3>
+
+        <ul>
+            <li>Carte Arduino</li>
+            <li>Capteur d’humidité du sol</li>
+            <li>Pompe à eau 5V</li>
+            <li>Relais (permet de commander des circuits électriques et pour contrôler des appareils électriques ici la pompe)</li>
+            <li>La plaque d’essai</li>
+            <li>Les différents câbles</li>
+        </ul>
+
+        <h3 class="gras">Pour réaliser le montage, on peut connecter :</h3>
+
+        <p class="gras"><strong>Pour le capteur d’humidité du sol :</strong></p>
+        <ul>
+            <li>La broche (+) à la borne 3.3V de l’Arduino</li>
+            <li>La broche (-) à la borne GND de l’Arduino</li>
+            <li>La broche (S) à la borne analogique A0 de l’Arduino</li>
+        </ul>
+
+        <p class="gras"><strong>Pour le relais :</strong></p>
+        <ul>
+            <li>La broche (+) à la borne 3.3V de l’Arduino</li>
+            <li>La broche (-) à la borne GND de l’Arduino</li>
+            <li>La broche (S) à la borne numérique N°4 de l’Arduino</li>
+            <li>La broche ON à la borne 5V de l’Arduino</li>
+        </ul>
+
+        <p class="gras"><strong>Pour la pompe à eau :</strong></p>
+        <ul>
+            <li>La première borne à la broche COM du relais</li>
+            <li>La deuxième borne à la GND de l’Arduino</li>
+        </ul>
+
+        <p>Voici le montage réalisé sur TINKERCAD : <a href="https://www.tinkercad.com/" target="_blank">TINKERCAD</a></p>
+
+        <img src="img/tinkercard1.png" alt="" srcset="">   
+        <p>Et voici le code envoyé sur la carte Arduino:</p>
+        <p>Le code est réalisé dans le logiciel ARDUINO.</p> 
+        <img src="img/tinkercard2.png" alt="" srcset="">    
+        <p>Voici où copier le code : <a href="https://textup.fr/759789QZ" target="_blank">https://textup.fr/759789QZ</a></p>
+    </div>
+
+
+    <footer id="footer">
+
+        <h2>Contactez-nous</h2>
+        <p>Les différents travaux de recherches ont été réalisés en collaboration avec Manuel Combes, professeur de physique en CPGE, chercheur associé au laboratoire "Géo-ocean".</p>
+        <p>Sous la supervision de Madame LE MAGOAROU Email : llemagoarou@lyceepaulvalery-ma.org et de Monsieur RACHIDI Email : jrachidi@lyceepaulvalery-ma.org</p>
+        <p>Créé par Soubai Adam, Ouazzani Youssef, Filali Jad, Kabiri Mohamed Ali &copy; 2024. Tous droits réservés.</p>        
+    
+        <p class="copyright">Copyright ®</p>
+        <a class="copyright1" rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a> <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"></a>.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Blog Enseignement scientifique</title>
+</head>
+<body>
+    <!-- cette partie permet de creer une chekboxe qui peut etre cocher et decocher avec des images pour pouvoir
+    ouvrir et fermer un menu  -->
+    <input type="checkbox" id="chekboxe">
+        <label for="chekboxe">   
+            <!-- les svg sont une manière de creer des images  -->
+            <svg id="menu" class="svg1" viewBox="0 0 100 80" width="40" height="40">
+                <rect width="100" height="20"></rect>
+                <rect y="30" width="100" height="20"></rect>
+                <rect y="60" width="100" height="20"></rect>
+            </svg>
+            <svg id="fermer_menu"  xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" viewBox="0 0 16 16"> <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708z"/> </svg>        
+        </label>
+    <!-- code de la barre fixé au haut du site     -->
+    <div id="head" class="head">
+        <a class="nom" href="index.html">Projet :  Tous chercheurs !</a>
+        <p class="menu_titre">MENU</p>
+    </div>
+    <!-- Code de la barre déroulante -->
+    <header class="navbar">
+        <h2 class="titre2">MENU</h2>
+        <!-- liste -->
+        <ul>
+            <li><a class="onglet" href="article1.html">L'homéopathie</a></li><br>
+            <li><a class="onglet" href="article2.html">L'hydroxychloroquine</a></li><br>
+            <li><a class="onglet" href="article3.html">La vaccination</a></li><br>
+            <li><a  class="onglet" href="article4.html">Tremblements de terre sans épicentre</a></li><br>
+            <li><a class="onglet" href="article5.html">La médecine quantique</a></li><br>
+            <li><a class="onglet" href="article6.html">La fonte du Permafrost</a></li>
+        </ul>
+    </header>
+    <div class="atout">
+        <h2>Sujet: Comment l’Homme influence-t-il le réchauffement climatique</h2>
+
+        <p class="gras">Plusieurs questions:</p>
+        <ul class="gras">
+            <li>Comment la couleur de l’océan influence la fonte des glaces ?</li>
+            <li>Comment la mer régule le niveau de CO2 ?</li>
+            <li>Comment fonctionne l’effet de serre</li>
+            <li>Quelles sont les différences entre la fonte des glaces continentales et océaniques ?</li>
+            <li>Comment la fonte de la banquise impacte le climat ?</li>
+        </ul>
+        
+        <h3 class="gras">Expériences :</h3>
+        
+        <h4 class="gras">I- « Il paraît que certaines couleurs gardent mieux la chaleur que d’autres. Lesquelles ? »</h4>
+        
+        <p class="gras"><strong>LE MATÉRIEL</strong></p>
+        <ul class="gras">
+            <li>2 thermomètres</li>
+            <li>Du papier noir</li>
+            <li>Du papier blanc</li>
+        </ul>
+        
+        <p class="gras"><strong>L’EXPÉRIENCE</strong></p>
+        <p class="gras">Pour réaliser cette expérience : fabriquer deux pochettes de forme identique, l'une en
+            utilisant du papier noir et l'autre en utilisant du papier blanc. Il faut s’assurer que les
+            pochettes soient hermétiquement closes et placer les pochettes exposées au soleil et
+            insérer un thermomètre dans chacune d'elles, en veillant à ce qu'il soit entièrement couvert
+            par la pochette. Laisser reposer pendant au moins 15 minutes, puis examiner les
+            températures dans les deux pochettes.</p>
+        <p class="gras">On constatera certainement que la pochette de couleur foncée est plus chaude que celle de
+            couleur claire. En effet, les couleurs foncées ont la propriété de retenir davantage la chaleur
+            que les couleurs claires. Cela s'explique par le fait que les couleurs claires renvoient plus de
+            rayons lumineux.</p>
+        <p class="gras">Ce phénomène est d'ailleurs responsable de l'accélération de la fonte des glaces arctiques.
+            En diminuant la surface blanche et réfléchissante de la banquise au profit de la surface
+            foncée de l'océan, la chaleur est rapidement captée par cette dernière, ce qui entraîne la
+            fonte de la banquise environnante. Cette situation crée un cercle vicieux, où plus la
+            banquise disparaît, plus elle disparaît rapidement.</p>
+        
+        <h4 class="gras">II) Une petite quantité d'eau de mer à température ambiante est placée dans un bécher ouvert, posé sur une plaque chauffante.</h4>
+        
+        <p class="gras"><strong>LE MATÉRIEL</strong></p>
+        <ul class="gras">
+            <li>eau gazeuse</li>
+            <li>Sonde à CO2</li>
+            <li>Plaque chauffante</li>
+            <li>Thermomètre</li>
+            <li>Chronomètre</li>
+        </ul>
+        
+        <p class="gras">Une sonde à CO2 mesure en permanence la concentration de CO2 gazeux dissous dans
+            l'eau de mer.
+            Au bout de 2 min, la plaque chauffante est allumée sous le bécher. Un thermomètre mesure
+            la température de l'eau en temps réel.
+            L'évolution de la température de l'eau de mer et de la teneur en CO2 gazeux dissous dans
+            l'eau est donnée sur les graphiques.
+            On observe une diminution du dioxyde de carbone dissous avec l’augmentation de la
+            température. Le CO2 initialement dissous dans l’eau est passé dans l’atmosphère.
+            (À l’inverse, lorsque la température diminue, du CO2 passe de l’état gazeux atmosphérique
+            à l’état dissous).
+            De la même manière, régulièrement, au cours des temps géologiques, l’augmentation de la
+            température du globe a entraîné un passage du CO2 des océans vers l’atmosphère, et la
+            concentration accrue de ce gaz à effet de serre dans l’atmosphère a eu un effet
+            amplificateur de l’augmentation de température.</p>
+        
+        <h4 class="gras">III) Réaliser une expérience mettant en évidence la différence d’impact entre la fonte
+            des glaces continentales et océaniques</h4>
+        
+        <p class="gras"><strong>LE MATÉRIEL</strong></p>
+        <ul>
+            <li>2 béchers</li>
+            <li>Des glaçons</li>
+            <li>Un support</li>
+        </ul>
+
+        <img src="img/glacon1.png" alt="">
+        <img src="img/glacon2.png" alt="">
+    </div>
+
+
+    <footer id="footer">
+
+        <h2>Contactez-nous</h2>
+        <p>Les différents travaux de recherches ont été réalisés en collaboration avec Manuel Combes, professeur de physique en CPGE, chercheur associé au laboratoire "Géo-ocean".</p>
+        <p>Sous la supervision de Madame LE MAGOAROU Email : llemagoarou@lyceepaulvalery-ma.org et de Monsieur RACHIDI Email : jrachidi@lyceepaulvalery-ma.org</p>
+        <p>Créé par Soubai Adam, Ouazzani Youssef, Filali Jad, Kabiri Mohamed Ali &copy; 2024. Tous droits réservés.</p>        
+    
+        <p class="copyright">Copyright ®</p>
+        <a class="copyright1" rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a> <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"></a>.
+    </footer>
+</body>
+</html>

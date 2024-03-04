@@ -195,7 +195,7 @@ div.fond h2 {
     top: 120px;
 }
 div.qui {
-    height: 550px;
+    height: 830px;
     background-color: rgb(230, 230, 230);
     
 }
@@ -692,4 +692,8 @@ table {
 
 div.general {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.gras {
+    padding: 10px;
 }
